@@ -36,9 +36,9 @@ const Hero = () => {
       </div>
 
       {/* Right part */}
-      <div className="w-full md:w-[50%] pl-4 pt-0">
+      <div className="w-full md:w-[50%] pl-4 ">
         <motion.p
-          className="font-medium py-2 text md:text-3xl sm:text-2xl text-xl"
+          className="font-medium pb-2 text md:text-3xl sm:text-2xl text-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
