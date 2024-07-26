@@ -1,7 +1,7 @@
 import swadeshshop from "../assets/img/swadeshshop.png";
 import genderrecognition from "../assets/img/gender.png";
 import grilli from "../assets/img/grilli.png";
-import { FcAbout } from "react-icons/fc";
+
 
 const Projects = () => {
   return (
