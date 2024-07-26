@@ -10,14 +10,14 @@ const Projects = () => {
       </h1>
       <div className="md:grid md:grid-cols-2 gap-12 px-3 flex flex-col">
         <div className="bg-white shadow-md shadow-gray-400 h-60 md:h-80 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[70%] relative flex justify-center items-center overflow-hidden border-b border-b-gray-300">
+          <div className="w-full  md:h-[70%] relative flex justify-center items-center overflow-hidden border-b border-b-gray-300">
             <img src={catalyst} alt="" className="w-[50%]" />
           </div>
-          <div className="w-full h-[30%] p-3">
+          <div className="w-full  md:[30%] p-3">
             <h2 className="text-md font-semibold text-gray-600 mb-1">
               The Catalyst- Technical Chief
             </h2>
-            <p className="hidden md:text-sm font-semibold md:block mb-1">
+            <p className=" text-xs md:text:sm font-semibold md:block mb-1">
               Associated since 2023
             </p>
             {/* <a
@@ -31,15 +31,15 @@ const Projects = () => {
           </div>
         </div>
         <div className="bg-white shadow-md shadow-gray-400 h-60 md:h-80 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[70%] relative flex justify-center items-center overflow-hidden border-b border-b-gray-300">
+          <div className="w-full h-[60%] md:h-[70%] relative flex justify-center items-center overflow-hidden border-b border-b-gray-300">
             <img src={techalchemy} alt="" className="w-[50%]" />
           </div>
-          <div className="w-full h-[30%] p-3">
+          <div className="w-full h-[40%] md:[30%] p-3">
             <h2 className="text-md font-semibold text-gray-600 mb-1">
-              TechAlchathon by TechAlchemy
+              TechAlchathon'24 by TechAlchemy
             </h2>
-            <p className="hidden md:text-sm font-semibold md:block mb-1">
-              Participated in hackathon and built the dapp platform for land ownership tranfer
+            <p className=" text-xs md:text:sm font-semibold md:block mb-1">
+              Participated in hackathon and built the dapp platform for land ownership transfer
             </p>
             
           </div>
