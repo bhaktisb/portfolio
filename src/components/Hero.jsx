@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { SiLeetcode } from "react-icons/si";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaTwitter, FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import profileImage from "../assets/img/new_moin.png"; // Replace with your actual image path
 
 const Hero = () => {
@@ -98,7 +99,14 @@ const Hero = () => {
             <FaSquareGithub className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://in.linkedin.com/in/moin-khan-a9b54528b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
+          </a>
+          <a
+            href="https://x.com/ThinkIt4u"
             target="_blank"
             rel="noopener noreferrer"
           >

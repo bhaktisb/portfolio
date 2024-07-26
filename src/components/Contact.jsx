@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { SiLeetcode } from "react-icons/si";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaTwitter, FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -33,7 +34,7 @@ const Contact = () => {
   return (
     <div className="w-full px-4 mt-10" id="contact">
       <h1 className="pb-6 md:text-5xl sm:text-4xl text-3xl font-semibold ml-4">
-        Contact Me
+      ✉ Contact Me
       </h1>
       <form
         className="bg-white shadow-md shadow-gray-400 p-6 md:px-20 rounded-md"
@@ -137,7 +138,16 @@ const Contact = () => {
             <span className="text-sm text-gray-700 mt-2">GitHub</span>
           </a>
           <a
-            href="https://twitter.com"
+            href="https://in.linkedin.com/in/moin-khan-a9b54528b"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center"
+          >
+            <FaLinkedin className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
+            <span className="text-sm text-gray-700 mt-2">LinkedIn</span>
+          </a>
+          <a
+            href="https://x.com/ThinkIt4u"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center"

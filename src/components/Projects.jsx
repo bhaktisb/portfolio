@@ -1,12 +1,13 @@
 import swadeshshop from "../assets/img/swadeshshop.png";
 import genderrecognition from "../assets/img/gender.png";
 import grilli from "../assets/img/grilli.png";
+import { FcAbout } from "react-icons/fc";
 
 const Projects = () => {
   return (
     <div className="w-full px-4 mt-10" id="projects">
-      <h1 className="pb-6 md:text-5xl sm:text-4xl text-3xl font-semibold ml-4">
-        Projects
+      <h1 className="pb-6 md:text-5xl sm:text-4xl text-3xl font-semibold ml-4 flex">
+      📕 Projects
       </h1>
       <div className="md:grid md:grid-cols-2 gap-12 px-3 flex flex-col">
         <div className="bg-white shadow-md shadow-gray-400 h-60 md:h-80 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">

@@ -4,9 +4,9 @@ import catalyst from "../assets/img/catalyst.png"
 import techalchemy from "../assets/img/techalchemy.png"
 const Projects = () => {
   return (
-    <div className="w-full px-4 mt-10" id="projects">
+    <div className="w-full px-4 mt-10" id="activities">
       <h1 className="pb-6 md:text-5xl sm:text-4xl text-3xl font-semibold ml-4">
-        Activities
+      ✒ Activities
       </h1>
       <div className="md:grid md:grid-cols-2 gap-12 px-3 flex flex-col">
         <div className="bg-white shadow-md shadow-gray-400 h-60 md:h-80 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
