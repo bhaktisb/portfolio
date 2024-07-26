@@ -48,7 +48,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Hey Amigos 🙋🏻‍♂🪄!
+          Hey Guys 🙋🏻‍♂🪄!
         </motion.p>
         <motion.h1
           className="md:text-5xl sm:text-4xl text-3xl font-semibold pb-2"
