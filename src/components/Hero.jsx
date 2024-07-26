@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { SiLeetcode } from "react-icons/si";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaTwitter, FaInstagramSquare } from "react-icons/fa";
-import profileImage from "../assets/img/m.png"; // Replace with your actual image path
+import profileImage from "../assets/img/new_moin.png"; // Replace with your actual image path
 
 const Hero = () => {
   const svgBase64 =
