@@ -1,6 +1,7 @@
 import profileImage from "../assets/img/m.png";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,11 +15,66 @@ const Navbar = () => {
         <img src={profileImage} alt="Profile" className="h-[85%]" />
       </div>
       <ul className="hidden md:flex gap-10 justify-center text-xl items-center mt-[-10px]">
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">Home</li>
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">Techstack</li>
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">Projects</li>
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">Activities</li>
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">Contact</li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">
+        <Link
+                activeClass="active"
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Home
+              </Link>
+        </li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">
+        <Link
+                activeClass="active"
+                to="techstack"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Techstack
+              </Link>
+        </li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">
+          <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Projects
+              </Link>
+              </li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">
+        <Link
+                activeClass="active"
+                to="activities"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Activities
+              </Link>
+        </li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100">
+        <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contacts
+              </Link>
+        </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose className="mt-2 ml-3 text-3xl font-extrabold" /> : <AiOutlineMenu className="mt-2 ml-3 text-3xl font-extrabold" />}
@@ -28,11 +84,62 @@ const Navbar = () => {
         <img src={profileImage} alt="Profile" className="h-[90%]" />
       </div>
         <ul className= "p-4">
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6">Home</li>
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6">Techstack</li>
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6">Projects</li>
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6">Activities</li>
-        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6">Contact</li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6">
+        <Link
+                activeClass="active"
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Home
+              </Link>
+        </li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6"><Link
+                activeClass="active"
+                to="techstack"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Techstack
+              </Link></li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6"><Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Projects
+              </Link></li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6">
+        <Link
+                activeClass="active"
+                to="activities"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Activities
+              </Link>
+        </li>
+        <li className="hover:text-[#ffdf00] hover:scale-105 duration-100 mb-6">
+        <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contacts
+              </Link>
+        </li>
         </ul>
       </div>
     </div>

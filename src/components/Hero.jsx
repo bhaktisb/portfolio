@@ -17,7 +17,7 @@ const Hero = () => {
   }, [svgBase64]);
 
   return (
-    <div className="w-full flex flex-col md:flex-row items-center md:justify-between">
+    <div className="w-full flex flex-col md:flex-row items-center md:justify-between" id='hero'>
       {/* Left part */}
       <div className="md:w-[50%] flex justify-center items-center">
         <motion.div
