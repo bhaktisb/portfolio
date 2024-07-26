@@ -48,7 +48,7 @@ const TechStack = () => {
         </div>
         {/* Data Analysis */}
         <div className="bg-white shadow-md shadow-gray-400 h-60 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[75%] relative flex justify-center items-center">
+          <div className="w-full h-[75%] relative flex justify-center items-center overflow-hidden">
             <img src={datascience} alt="" className="w-[50%]" />
           </div>
           <div className="bg-[#ffdf00] w-full h-[25%] text-xl font-medium flex justify-center items-center">
