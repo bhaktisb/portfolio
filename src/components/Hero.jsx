@@ -5,6 +5,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { FaTwitter, FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import profileImage from "../assets/img/new_moin.png"; // Replace with your actual image path
+import { Link } from "react-scroll";
 
 const Hero = () => {
   const svgBase64 =
@@ -78,9 +79,19 @@ const Hero = () => {
           creating innovative solutions that blend technology and user
           experience.
         </motion.p>
+        <Link
+                activeClass="active"
+                to="techstack"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                
+              >
         <button className="bg-[#ffdf00] w-[200px] rounded-md font-medium my-6 mx-auto px-4 py-3 text-black">
           Go to MyTechStack
         </button>
+        </Link>
 
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4 justify-start">
