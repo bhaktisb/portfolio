@@ -12,8 +12,6 @@ import { DiMongodb } from "react-icons/di";
 import { TbBrandCpp } from "react-icons/tb";
 import { FaJava } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-import machine from "../assets/img/machine.webp";
-import datascience from "../assets/img/data.png";
 import { GiArtificialIntelligence } from 'react-icons/gi';
 
 const TechStack = () => {

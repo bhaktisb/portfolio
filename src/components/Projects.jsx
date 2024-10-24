@@ -1,5 +1,4 @@
 import genderrecognition from "../assets/img/gender.png";
-import spring from "../assets/img/spring.webp";
 import fraudcall from "../assets/img/fraudcall.jpg";
 import autoforest from "../assets/img/autoforest.png"
 
