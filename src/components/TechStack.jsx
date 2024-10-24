@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { SiSpringboot, SiSpring ,SiTensorflow} from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiExpress, SiMysql,SiPython, SiFlask,SiR,SiGit, SiGithub } from "react-icons/si";
+import { SiExpress, SiMysql,SiPython, SiFlask,SiR,SiGit } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandCpp } from "react-icons/tb";
 import { FaJava } from "react-icons/fa6";
