@@ -16,7 +16,6 @@ function App() {
   <TechStack/>
   <Projects/>
   <Activities/>
-  <Contact/>
   </div>
  
 

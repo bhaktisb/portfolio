@@ -4,7 +4,7 @@ import { SiLeetcode } from "react-icons/si";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaTwitter, FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import profileImage from "../assets/img/new_moin.png"; // Replace with your actual image path
+import profileImage from "../assets/img/photo.JPG"; // Replace with your actual image path
 import { Link } from "react-scroll";
 
 const Hero = () => {
@@ -27,7 +27,7 @@ const Hero = () => {
       {/* Left part */}
       <div className="md:w-[50%] flex justify-center items-center">
         <motion.div
-          className="relative md:w-[600px] md:h-[600px] w-[400px] h-[400px] bg-no-repeat bg-center bg-cover flex justify-center items-center"
+          className="relative md:w-[600px] md:h-[600px] w-[400px] h-[400px] bg-no-repeat bg-center bg-cover flex justify-center items-center rounded-full border-4 border-gray-300 shadow-lg overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.0 }}
@@ -36,7 +36,7 @@ const Hero = () => {
           <img
             src={profileImage}
             alt="Profile"
-            className="absolute inset-0 object-cover w-[50%] md:ml-32 md:mt-12 mt-10 ml-24"
+            className="object-cover w-full h-full"
           />
         </motion.div>
       </div>
@@ -57,7 +57,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hi, Myself <span className="text-[#ffdf00] font-bold">Moin Khan</span>
+          Hi, Myself{" "}
+          <span className="text-[#ffdf00] font-bold">Samarth Otari</span>
         </motion.h1>
         <div className="flex justify-start">
           <motion.p
@@ -75,56 +76,54 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         >
-          Passionate MERN stack developer and machine learning enthusiast,
-          creating innovative solutions that blend technology and user
-          experience.
+          I'm a passionate developer with expertise in the MERN stack, Spring,
+          and Spring Boot, and a deep enthusiasm for machine learning.
         </motion.p>
         <Link
-                activeClass="active"
-                to="techstack"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                
-              >
-        <button className="bg-[#ffdf00] w-[200px] rounded-md font-medium my-6 mx-auto px-4 py-3 text-black">
-          Go to MyTechStack
-        </button>
+          activeClass="active"
+          to="techstack"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <button className="bg-[#ffdf00] w-[200px] rounded-md font-medium my-6 mx-auto px-4 py-3 text-black">
+            Go to MyTechStack
+          </button>
         </Link>
 
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4 justify-start">
           <a
-            href="https://leetcode.com/u/moink25/"
+            href="https://leetcode.com/u/otarisamarth49/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <SiLeetcode className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://github.com/Moink25/"
+            href="https://github.com/samarth49"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaSquareGithub className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://in.linkedin.com/in/moin-khan-a9b54528b"
+            href="https://www.linkedin.com/in/samarth-otari-b600b6210/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://x.com/ThinkIt4u"
+            href="https://x.com/SamarthOtari"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaTwitter className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://www.instagram.com/moink_25?igsh=MTV2bzUzY2U5aWZjMg=="
+            href="https://www.instagram.com/samarth_otari49/"
             target="_blank"
             rel="noopener noreferrer"
           >

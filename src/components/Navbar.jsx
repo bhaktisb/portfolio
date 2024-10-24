@@ -34,13 +34,57 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-between h-30 px-6 py-2 shadow-sm shadow-gray-300">
-      <div className="bg-[#ffdf00] rounded-full w-24 h-24 flex justify-center items-center p-2 hover:scale-105 duration-200">
-        <img src={profileImage} alt="Profile" className="h-[85%]" />
+    <div className="w-full flex items-center justify-between px-6 py-4 shadow-md bg-white border-b border-gray-300">
+    {/* Profile Image */}
+    <div className="bg-[#ffdf00] rounded-full w-20 h-20 flex justify-center items-center p-2 hover:scale-105 transition-transform duration-300">
+  
+</div>
+
+    {/* Desktop Navigation */}
+    <ul className="hidden md:flex gap-8 text-lg items-center">
+      {["Info", "Technologies", "projects", "activities", "contact"].map((section, index) => (
+        <li key={index} className="relative group">
+          <Link
+            activeClass="active"
+            to={section}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={handleLinkClick}
+            className="hover:text-[#ffdf00] transition-colors duration-300 font-medium"
+          >
+            {section.charAt(0).toUpperCase() + section.slice(1)}
+          </Link>
+          <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#ffdf00] transition-all duration-300 group-hover:w-full"></span>
+        </li>
+      ))}
+    </ul>
+
+    {/* Mobile Menu Toggle */}
+    <div onClick={handleNav} className="block md:hidden cursor-pointer">
+      {nav ? (
+        <AiOutlineClose className="text-3xl text-[#ffdf00] hover:scale-105 transition-transform duration-300" />
+      ) : (
+        <AiOutlineMenu className="text-3xl text-[#ffdf00] hover:scale-105 transition-transform duration-300" />
+      )}
+    </div>
+
+    {/* Mobile Navigation */}
+    <div
+      ref={navRef}
+      className={`fixed top-0 left-0 w-3/4 md:w-1/2 h-full bg-white shadow-lg border-r border-gray-300 transition-transform duration-300 ${
+        nav ? "translate-x-0" : "-translate-x-full"
+      }`}
+    >
+      <div className="flex items-center justify-center p-4 bg-[#ffdf00] shadow-md border-b border-gray-300">
+        <div className="bg-white rounded-full w-20 h-20 flex justify-center items-center p-2 hover:scale-105 transition-transform duration-300">
+          <img src={profileImage} alt="Profile" className="rounded-full w-[90%] h-[90%] object-cover" />
+        </div>
       </div>
-      <ul className="hidden md:flex gap-10 justify-center text-xl items-center mt-[-10px]">
-        {["hero", "techstack", "projects", "activities", "contact"].map((section, index) => (
-          <li key={index} className="hover:text-[#ffdf00] hover:scale-105 cursor-pointer duration-200">
+      <ul className="flex flex-col items-center mt-8 space-y-6">
+        {["Info", "Technologies", "projects", "activities", "contact"].map((section, index) => (
+          <li key={index} className="text-xl font-semibold hover:text-[#ffdf00] transition-colors duration-300">
             <Link
               activeClass="active"
               to={section}
@@ -49,43 +93,15 @@ const Navbar = () => {
               offset={-70}
               duration={500}
               onClick={handleLinkClick}
+              className="hover:text-[#ffdf00] transition-colors duration-300"
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </Link>
           </li>
         ))}
       </ul>
-      <div onClick={handleNav} className="block md:hidden cursor-pointer">
-        {nav ? <AiOutlineClose className="mt-2 ml-3 text-3xl font-extrabold" /> : <AiOutlineMenu className="mt-2 ml-3 text-3xl font-extrabold" />}
-      </div>
-      <div
-        ref={navRef}
-        className={`fixed left-0 top-0 w-[40%] h-[450px] text-xl bg-white ease-in-out duration-500 pl-3 pt-4 flex flex-col justify-start border-r border-b shadow-md shadow-gray-200 z-50 ${
-          nav ? "transform translate-x-0" : "transform -translate-x-full"
-        }`}
-      >
-        <div className="bg-[#ffdf00] rounded-full w-28 h-28 flex justify-center items-center p-2 hover:scale-105 duration-200">
-          <img src={profileImage} alt="Profile" className="h-[90%]" />
-        </div>
-        <ul className="p-4">
-          {["hero", "techstack", "projects", "activities", "contact"].map((section, index) => (
-            <li key={index} className="hover:text-[#ffdf00] hover:scale-105 cursor-pointer duration-200 mb-6">
-              <Link
-                activeClass="active"
-                to={section}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={handleLinkClick}
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
+  </div>
   );
 };
 

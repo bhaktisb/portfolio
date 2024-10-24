@@ -1,71 +1,94 @@
-import swadeshshop from "../assets/img/swadeshshop.png";
 import genderrecognition from "../assets/img/gender.png";
-import grilli from "../assets/img/grilli.png";
-
+import spring from "../assets/img/spring.webp";
+import fraudcall from "../assets/img/fraudcall.jpg";
+import autoforest from "../assets/img/autoforest.png"
 
 const Projects = () => {
   return (
     <div className="w-full px-4 mt-10" id="projects">
-      <h1 className="pb-6 md:text-5xl sm:text-4xl text-3xl font-semibold ml-4 flex">
-      📕 Projects
+      <h1 className="pb-8 md:text-5xl sm:text-4xl text-3xl font-bold text-gray-800 text-center">
+        📕 Projects
       </h1>
-      <div className="md:grid md:grid-cols-2 gap-12 px-3 flex flex-col">
-        <div className="bg-white shadow-md shadow-gray-400 h-60 md:h-80 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[70%] relative flex justify-center items-center overflow-hidden border-b border-b-gray-300">
-            <img src={swadeshshop} alt="" className="w-[80%]" />
+      <div className="grid md:grid-cols-2 gap-12 px-3 mx-auto max-w-7xl">
+        {/* Project 1 */}
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 mx-auto">
+          <div className="relative w-full h-60 md:h-80 flex items-center justify-center overflow-hidden">
+            <img
+              src={genderrecognition}
+              alt="Gender Recognition"
+              className="object-cover w-full h-full"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h2 className="text-xl md:text-2xl font-bold mb-2">
+                Gender Recognition using Voice
+              </h2>
+              <p className="text-sm md:text-base font-light leading-tight">
+                Developed a Shiny app for gender recognition by extracting MFCC
+                features and applying XGBoost.
+              </p>
+            </div>
           </div>
-          <div className="w-full h-[30%] p-3">
-            <h2 className="text-md font-semibold text-gray-600 mb-1">
-              SwadeshShop-Ecommerce Website
-            </h2>
-            <p className="hidden md:text-sm font-semibold md:block mb-1">
-              A user-friendly functional ecommerce platform using MERN stack.
-            </p>
-            <a
-              href="https://swadeshshop.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#ffdf00] w-[100px] rounded-md font-medium text-center text-black"
-            >
-              <button className="w-full h-full">Go</button>
-            </a>
-          </div>
-        </div>
-        <div className="bg-white shadow-md shadow-gray-400 h-60 md:h-80 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[70%] relative flex justify-center items-center overflow-hidden border-b border-b-gray-300">
-            <img src={genderrecognition} alt="" className="w-[80%]" />
-          </div>
-          <div className="w-full h-[30%] p-3">
-            <h2 className="text-md font-semibold text-gray-600 mb-1">
-              Gender Recognition using Voice
-            </h2>
-            <p className="hidden md:text-sm font-semibold md:block mb-1">
-              Shiny app built for the gender identification through voice using
-              xgboost algorithm.
-            </p>
-            <button className="bg-[#ffdf00] w-[100px] rounded-md font-medium mx-auto text-black">
-              Go
+          <div className="p-4 flex justify-center items-center">
+            <button className="bg-[#ffdf00] text-black rounded-lg px-6 py-3 font-semibold hover:bg-[#ffd700] transition-colors duration-300"
+            onClick={() => window.open('https://github.com/samarth49/voice-recognition.git', '_blank')}>
+              Learn More
             </button>
           </div>
         </div>
-        <div className="bg-white shadow-md shadow-gray-400 h-60 md:h-80 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[70%] relative flex justify-center items-center overflow-hidden border-b border-b-gray-300">
-            <img src={grilli} alt="" className="w-[80%]" />
+        
+        {/* Project 3: Fraud Call Detection */}
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 mx-auto">
+          <div className="relative w-full h-60 md:h-80 flex items-center justify-center overflow-hidden">
+            <img
+              src={fraudcall} // Add your image path here
+              alt="Fraud Call Detection"
+              className="object-cover w-full h-full"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h2 className="text-xl md:text-2xl font-bold mb-2">
+                Fraud Call Detection
+              </h2>
+              <p className="text-sm md:text-base font-light leading-tight">
+                Developed an AI-based system for detecting fraudulent calls using
+                BERT. Integrated an LLM model for sophisticated analysis
+                and utilized the Twilio API for call database and robo calling.
+              </p>
+            </div>
           </div>
-          <div className="w-full h-[30%] p-3">
-            <h2 className="text-md font-semibold text-gray-600 mb-1">Grilli</h2>
-            <p className="hidden md:text-sm font-semibold md:block mb-1">
-              Platform to book the restaurant tables in advance and be in
-              contact with owner.
-            </p>
-            <a
-              href="https://grillin.000webhostapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#ffdf00] w-[100px] rounded-md font-medium text-center text-black"
-            >
-              <button className="w-full h-full">Go</button>
-            </a>
+          <div className="p-4 flex justify-center items-center">
+            {/* <button className="bg-[#ffdf00] text-black rounded-lg px-6 py-3 font-semibold hover:bg-[#ffd700] transition-colors duration-300">
+              Learn More
+            </button> */}
+          </div>
+        </div>
+
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 mx-auto">
+          <div className="relative w-full h-60 md:h-80 flex items-center justify-center overflow-hidden">
+            <img
+              src={autoforest}
+              alt="autoforest plantbot"
+              className="object-fit w-full h-full"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+            <div className="absolute bottom-6 left-6 text-red">
+              <h2 className="text-xl md:text-2xl font-bold mb-2">
+              AutoForest Plant Bot (present)
+              </h2>
+              <p className="text-sm md:text-base font-light leading-tight">
+              Utilized the DeepForest package to count tree crowns in aerial images for accurate tree enumeration.
+              Applied image processing techniques and the A* to optimize pathfinding, 
+              Integrated a Flask backend with a React frontend and established a connection between the web server and a 
+              Raspberry Pi for seamless data exchange.
+              </p>
+            </div>
+          </div>
+          <div className="p-4 flex justify-center items-center">
+            <button className="bg-[#ffdf00] text-black rounded-lg px-6 py-3 font-semibold hover:bg-[#ffd700] transition-colors duration-300"
+            onClick={() => window.open('https://github.com/samarth49/AutoForestFinal.git', '_blank')}>
+              Learn More
+            </button>
           </div>
         </div>
       </div>
