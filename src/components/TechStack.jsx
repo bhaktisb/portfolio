@@ -7,13 +7,14 @@ import {
 } from "react-icons/fa";
 import { SiSpringboot, SiSpring ,SiTensorflow} from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiExpress, SiMysql } from "react-icons/si";
+import { SiExpress, SiMysql,SiPython, SiFlask,SiR,SiGit, SiGithub } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandCpp } from "react-icons/tb";
 import { FaJava } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import machine from "../assets/img/machine.webp";
 import datascience from "../assets/img/data.png";
+import { GiArtificialIntelligence } from 'react-icons/gi';
 
 const TechStack = () => {
   return (
@@ -34,22 +35,27 @@ const TechStack = () => {
             <DiMongodb className="text-3xl shadow-sm shadow-gray-400" />
             <SiSpring className="text-3xl shadow-sm shadow-gray-400" />
             <SiSpringboot className="text-3xl shadow-sm shadow-gray-400" />
+            <SiPython className="text-3xl shadow-sm shadow-gray-400" />
+            <SiFlask className="text-3xl shadow-sm shadow-gray-400" />
+            <SiGit className="text-3xl shadow-sm shadow-gray-400" />
           </div>
           <div className="bg-white text-black w-full h-[20%] text-xl font-medium flex justify-center items-center">
             Web Development
           </div>
         </div>
         {/* Machine Learning */}
-        <div className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 shadow-md shadow-gray-400 h-60 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[80%] relative">
-            <img
-              src={machine}
-              alt="Machine Learning"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+        <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow-md shadow-gray-400 h-60 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
+        <div className="w-full h-[80%] grid grid-cols-4 gap-4 p-4 pl-8 text-white">
+        <SiTensorflow className="text-blue-400 text-3xl shadow-sm shadow-gray-400" />
+          <GiArtificialIntelligence className="text-blue-400 text-3xl shadow-sm shadow-gray-400" />
+          <SiR className="text-blue-400 text-3xl shadow-sm shadow-gray-400" />
+          <SiPython className="text-3xl shadow-sm shadow-gray-400" />
+
+
+
           </div>
           <div className="bg-white text-black w-full h-[20%] text-xl font-medium flex justify-center items-center">
-            Machine Learning
+            AI/ML
           </div>
         </div>
         {/* Database Systems */}
@@ -64,7 +70,7 @@ const TechStack = () => {
           </div>
         </div>
         {/* Data Structures and Algorithms */}
-        <div className="bg-gradient-to-r from-teal-400 via-green-500 to-blue-500 shadow-md shadow-gray-400 h-60 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
+        <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow-md shadow-gray-400 h-60 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
           <div className="w-full h-[80%] flex justify-center items-center gap-10 text-white">
             <TbBrandCpp className="text-3xl shadow-sm shadow-gray-400" />
             <FaJava className="text-3xl shadow-sm shadow-gray-400" />
@@ -74,16 +80,8 @@ const TechStack = () => {
             Data Structures And Algorithms
           </div>
         </div>
-        {/* NLP */}
-        <div className="bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 shadow-md shadow-gray-400 h-60 rounded-md overflow-hidden border-t border-t-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[80%] grid grid-cols-4 gap-4 p-4 pl-8 text-white">
-            <SiTensorflow className="text-blue-400 text-3xl shadow-sm shadow-gray-400" />
-            {/* Add any other icons related to NLP or libraries you use */}
-          </div>
-          <div className="bg-white text-black w-full h-[20%] text-xl font-medium flex justify-center items-center">
-            Natural Language Processing
-          </div>
-        </div>
+        
+        
       </div>
     </div>
   );
