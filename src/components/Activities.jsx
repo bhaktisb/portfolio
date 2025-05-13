@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import ubs from "../assets/img/ubs.jpg";
-import techalchemy from "../assets/img/techalchemy.png";
-import ABVP from "../assets/img/ABVP.png";
-import ubs1 from "../assets/img/ubs1.jpg"
+import lpf from "../assets/img/lpf.jpg";       
+import bitathon from "../assets/img/bitathon.jpg"; 
+import inlight from "../assets/img/inlight.jpg";   
+
 const sliderSettings = {
   dots: true,
   infinite: true,
@@ -15,90 +15,69 @@ const sliderSettings = {
   autoplaySpeed: 3000,
 };
 
-const Projects = () => {
+const Activities = () => {
   return (
     <div className="w-full px-4 mt-10" id="activities">
-      
-      <div className="w-full px-4 mt-10" id="activities">
-      
-      <div className="w-full px-4 mt-10" id="activities">
       <h1 className="pb-8 md:text-5xl sm:text-4xl text-3xl font-bold text-gray-800 text-center">
-        ✒ Activities / Achievements
+        ✒ Achievements & Activities
       </h1>
       <div className="slider-container max-w-5xl mx-auto">
         <Slider {...sliderSettings}>
-          {/* Activity 1 */}
+          {/* Activity 1: LPF */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
             <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
               <img
-                src={ubs1}
-                alt="Software Innovation'24 by Cummins College and UBS"
+                src={lpf}
+                alt="LPF Scholarship"
                 className="object-contain max-w-[90%] max-h-[90%]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h2 className="text-lg md:text-xl font-bold mb-1">
-                  Software Innovation'24 by Cummins College and UBS
+                  LPF Scholarship Awardee
                 </h2>
                 <p className="text-xs md:text-sm font-light leading-tight">
-                  Winner of the Software Innovation Hackathon organized by UBS and Cummins College of Engineering, Pune.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
-            <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
-              <img
-                src={ubs}
-                alt="Software Innovation'24 by Cummins College and UBS"
-                className="object-contain max-w-[90%] max-h-[90%]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h2 className="text-lg md:text-xl font-bold mb-1">
-                  Software Innovation'24 by Cummins College and UBS
-                </h2>
-                <p className="text-xs md:text-sm font-light leading-tight">
-                  Winner of the Software Innovation Hackathon organized by UBS and Cummins College of Engineering, Pune.
+                  Awarded the prestigious Lila Poonawalla Foundation Scholarship for Engineering Students (2021–22) for academic excellence and leadership.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Activity 2 */}
+          {/* Activity 2: BITATHON */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
             <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
               <img
-                src={techalchemy}
-                alt="TechAlchathon'24 by TechAlchemy"
+                src={bitathon}
+                alt="BITATHON Finalist"
                 className="object-contain max-w-[90%] max-h-[90%]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h2 className="text-lg md:text-xl font-bold mb-1">
-                  TechAlchathon'24 by TechAlchemy
+                  BITATHON Finalist
                 </h2>
                 <p className="text-xs md:text-sm font-light leading-tight">
-                  Finalist at TechAlchathon, built a Dapp Land Registry System.
+                  Finalist at BITATHON – Data Analytics & Mining Championship organized by GIM and SAS.
                 </p>
               </div>
             </div>
           </div>
-          {/* Activity 3 */}
+
+          {/* Activity 3: Inlight Internship */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
             <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
               <img
-                src={ABVP}
-                alt="ABVP"
+                src={inlight}
+                alt="Inlight Internship"
                 className="object-contain max-w-[90%] max-h-[90%]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h2 className="text-lg md:text-xl font-bold mb-1">
-                  Volunteer At VIT Pune ABVP Unit
+                  Web Development Internship
                 </h2>
                 <p className="text-xs md:text-sm font-light leading-tight">
-                  Managed Social Media During Membership Drive 
+                  Successfully completed full-stack web development internship at Inlight Technologies, Latur, applying practical web dev skills.
                 </p>
               </div>
             </div>
@@ -106,9 +85,7 @@ const Projects = () => {
         </Slider>
       </div>
     </div>
-    </div>
-    </div>
   );
 };
 
-export default Projects;
+export default Activities;

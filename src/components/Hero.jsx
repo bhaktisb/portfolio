@@ -4,7 +4,7 @@ import { SiLeetcode } from "react-icons/si";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaTwitter, FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import profileImage from "../assets/img/photo.JPG"; // Replace with your actual image path
+import profileImage from "../assets/img/photo1.png"; 
 import { Link } from "react-scroll";
 
 const Hero = () => {
@@ -49,7 +49,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Hey Guys 🙋🏻‍♂🪄!
+          Hello everyone 👩🏻‍💻✨
         </motion.p>
         <motion.h1
           className="md:text-5xl sm:text-4xl text-3xl font-semibold pb-2"
@@ -57,8 +57,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Hi, Myself{" "}
-          <span className="text-[#ffdf00] font-bold">Samarth Otari</span>
+          I'm{" "}
+          <span className="text-[#ffdf00] font-bold">Bhakti Bhande</span>
         </motion.h1>
         <div className="flex justify-start">
           <motion.p
@@ -76,8 +76,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         >
-          I'm a passionate developer with expertise in the MERN stack, Spring,
-          and Spring Boot, and a deep enthusiasm for machine learning.
+          B.Tech IT student at VIT Pune. Passionate about building intelligent,
+          scalable software using Java, Python, cloud computing, and AI-driven
+          automation.
         </motion.p>
         <Link
           activeClass="active"
@@ -88,42 +89,42 @@ const Hero = () => {
           duration={500}
         >
           <button className="bg-[#ffdf00] w-[200px] rounded-md font-medium my-6 mx-auto px-4 py-3 text-black">
-            Go to MyTechStack
+            Go to My Tech Stack
           </button>
         </Link>
 
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4 justify-start">
           <a
-            href="https://leetcode.com/u/otarisamarth49/"
+            href="https://leetcode.com/" // Add if available
             target="_blank"
             rel="noopener noreferrer"
           >
             <SiLeetcode className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://github.com/samarth49"
+            href="https://github.com/bhaktisb"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaSquareGithub className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://www.linkedin.com/in/samarth-otari-b600b6210/"
+            href="www.linkedin.com/in/bhakti-bhande-b5b794293"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://x.com/SamarthOtari"
+            href="https://twitter.com/" // Add if available
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaTwitter className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="https://www.instagram.com/samarth_otari49/"
+            href="https://linkedin.com/in/bhakti-bhande/" // Add if relevant
             target="_blank"
             rel="noopener noreferrer"
           >
