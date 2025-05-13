@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
-import profileImage from "../assets/img/photo.jpg";
+import profileImage from "../assets/img/bhakti.jpg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
