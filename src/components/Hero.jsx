@@ -96,7 +96,7 @@ const Hero = () => {
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4 justify-start">
           <a
-            href="https://leetcode.com/" // Add if available
+            href="https://leetcode.com/u/bhaktibhande1/" // Add if available
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -121,14 +121,14 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
+{/*             <FaTwitter className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
             href="https://linkedin.com/in/bhakti-bhande/" // Add if relevant
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagramSquare className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
+            <FaInstagramSquare className="text-black text-3xl shadow-md shadow-[#ffdf00]" /> */}
           </a>
         </div>
       </div>
