@@ -1,10 +1,26 @@
-# 🌐 Bhakti Bhande 
-Personal Portfolio
-This is the source code for my personal portfolio website built with React.js. It showcases my projects, tech stack, achievements, and contact details in a visually appealing, responsive layout.
-🚀 Live Demo
-👉 Hosted on Netlify:https://bhaktibhande.netlify.app/
+Bhakti Bhande | Portfolio Website
+
+Welcome to my personal portfolio website built using React.js and Tailwind CSS. This site showcases my projects, skills, achievements, and contact information in a modern, responsive layout.
+
+🔗 Live Site: [https://bhaktibhande.netlify.app](https://bhaktibhande.netlify.app)
+
 ---
+
+🖥️ Tech Stack
+
+- Frontend: React.js
+- Styling: Tailwind CSS
+- Icons & Animations: React Icons, React Slick
+- Deployment: Netlify
+- Smooth Scrolling: react-scroll
+
+---
+
+📁 Project Structure
+
+
 📂 Folder Structure
+
 portfolio/
 ├── public/
 ├── src/
@@ -22,13 +38,6 @@ portfolio/
 ├── package.json
 └── README.md
 
-🔧 Tech Stack
-- Frontend: React.js, Tailwind CSS
-- Icons: React Icons
-- Slider: React Slick
-- Routing/Scroll: `react-scroll`
-- Deployment: Netlify / GitHub Pages
----
 
 📌 Features
 - Responsive design for mobile & desktop
@@ -36,13 +45,16 @@ portfolio/
 - Dynamic project and activity cards
 - Image slider for achievements
 - Modern UI using Tailwind CSS
+  
 ---
+
 📸 Sections Included
 - Hero: Short intro and profile
 - Technologies: Tech stack and tools
 - Projects: AI/ML, full-stack & embedded system projects
 - Activities: Hackathons, Scholarships, and Volunteering
 - Contact: Social links & email
+  
 ---
 
 🛠️ Installation
