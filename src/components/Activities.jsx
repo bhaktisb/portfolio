@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import lpf from "../assets/img/lpf.jpg";       
+import ISIH_WIN from "../assets/img/ISIH_WIN.jpg";  
+import lpf from "../assets/img/lpf.jpg";  
 import bitathon from "../assets/img/bitathon.jpg"; 
 import inlight from "../assets/img/inlight.jpg";   
 
@@ -23,7 +24,27 @@ const Activities = () => {
       </h1>
       <div className="slider-container max-w-5xl mx-auto">
         <Slider {...sliderSettings}>
-          {/* Activity 1: LPF */}
+              {/* Activity 1: INTERNAL SMART INDIA HACKTHON WINNER */}
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
+            <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
+              <img
+                src={ISIH_WIN}
+                alt="LPF Scholarship"
+                className="object-contain max-w-[90%] max-h-[90%]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h2 className="text-lg md:text-xl font-bold mb-1">
+                  Internal Smart India Hackthon Winner
+                </h2>
+                <p className="text-xs md:text-sm font-light leading-tight">
+                  Winner of the Internal Smart India Hackathon (2025) for developing an innovative solution 
+        to real-world problem statements.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* Activity 2: LPF */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
             <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
               <img
@@ -43,7 +64,7 @@ const Activities = () => {
             </div>
           </div>
 
-          {/* Activity 2: BITATHON */}
+          {/* Activity 3: BITATHON */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
             <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
               <img
@@ -63,7 +84,7 @@ const Activities = () => {
             </div>
           </div>
 
-          {/* Activity 3: Inlight Internship */}
+          {/* Activity 4: Inlight Internship */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
             <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
               <img
