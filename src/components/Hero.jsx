@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { SiLeetcode } from "react-icons/si";
 import { FaSquareGithub } from "react-icons/fa6";
-import { FaTwitter, FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import profileImage from "../assets/img/photo1.png"; 
 import { Link } from "react-scroll";
@@ -20,10 +19,7 @@ const Hero = () => {
   }, [svgBase64]);
 
   return (
-    <div
-      className="w-full flex flex-col md:flex-row items-center md:justify-between"
-      id="hero"
-    >
+    <div className="w-full flex flex-col md:flex-row items-center md:justify-between" id="hero">
       {/* Left part */}
       <div className="md:w-[50%] flex justify-center items-center">
         <motion.div
@@ -33,16 +29,12 @@ const Hero = () => {
           transition={{ duration: 1.0 }}
           ref={svgRef}
         >
-          <img
-            src={profileImage}
-            alt="Profile"
-            className="object-cover w-full h-full"
-          />
+          <img src={profileImage} alt="Profile" className="object-cover w-full h-full" />
         </motion.div>
       </div>
 
       {/* Right part */}
-      <div className="w-full md:w-[50%] pl-4 ">
+      <div className="w-full md:w-[50%] pl-4">
         <motion.p
           className="font-medium pb-2 text md:text-3xl sm:text-2xl text-xl"
           initial={{ opacity: 0, y: 20 }}
@@ -57,8 +49,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          I'm{" "}
-          <span className="text-[#ffdf00] font-bold">Bhakti Bhande</span>
+          I'm <span className="text-[#ffdf00] font-bold">Bhakti Bhande</span>
         </motion.h1>
         <div className="flex justify-start">
           <motion.p
@@ -76,18 +67,12 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         >
-          B.Tech IT student at VIT Pune. Passionate about building intelligent,
-          scalable software using Java, Python, cloud computing, and AI-driven
-          automation.
+          B.Tech IT student at VIT Pune. Entry-Level Software Engineer with hands-on experience in
+          full-stack development and test automation. Proficient in Java, Python, and SQL, passionate
+          about building cloud-native applications, scalable pipelines, and AI-driven solutions.
+          Familiar with Agile methodologies.
         </motion.p>
-        <Link
-          activeClass="active"
-          to="techstack"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
+        <Link to="techstack" spy={true} smooth={true} offset={-70} duration={500}>
           <button className="bg-[#ffdf00] w-[200px] rounded-md font-medium my-6 mx-auto px-4 py-3 text-black">
             Go to My Tech Stack
           </button>
@@ -95,40 +80,18 @@ const Hero = () => {
 
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4 justify-start">
-          <a
-            href="https://leetcode.com/u/bhaktibhande1/" // Add if available
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://leetcode.com/u/bhaktibhande1/" target="_blank" rel="noopener noreferrer">
             <SiLeetcode className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
-          <a
-            href="https://github.com/bhaktisb"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/bhaktisb" target="_blank" rel="noopener noreferrer">
             <FaSquareGithub className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
           </a>
           <a
-            href="www.linkedin.com/in/bhakti-bhande-b5b794293"
+            href="https://www.linkedin.com/in/bhakti-bhande-b5b794293/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
-          </a>
-          <a
-            href="https://twitter.com/" // Add if available
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-{/*             <FaTwitter className="text-black text-3xl shadow-md shadow-[#ffdf00]" />
-          </a>
-          <a
-            href="https://linkedin.com/in/bhakti-bhande/" // Add if relevant
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagramSquare className="text-black text-3xl shadow-md shadow-[#ffdf00]" /> */}
           </a>
         </div>
       </div>
