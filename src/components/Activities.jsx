@@ -1,111 +1,85 @@
-import React from "react";
-import Slider from "react-slick";
-import ISIH_WIN from "../assets/img/ISIH_WIN.jpg";  
-import lpf from "../assets/img/lpf.jpg";  
-import bitathon from "../assets/img/bitathon.jpg"; 
-import inlight from "../assets/img/inlight.jpg";   
+import { FaTrophy, FaMedal, FaAward } from "react-icons/fa";
+import isih from "../assets/img/ISIH_WIN.jpg";
+import bitathon from "../assets/img/bitathon.jpg";
+import lpf from "../assets/img/lpf.jpg";
+import vv from "../assets/img/vv.jpg";
 
-const sliderSettings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
-};
+const achievements = [
+  {
+    image: lpf,
+    icon: <FaTrophy />,
+    title: "Lila Poonawalla Foundation Scholar",
+    description:
+      "Awarded Lila Poonawalla Foundation Scholarship (2023–2026) for academic excellence.",
+    color: "bg-yellow-500",
+  },
+   {
+    image: vv,
+    icon: <FaTrophy />,
+    title: "SMART INDIA HACKATHON WINNER 2025",
+    description:
+      "Team RoboRebels",
+    color: "bg-yellow-500",
+  },
+  {
+    image: isih,
+    icon: <FaMedal />,
+    title: "Winner – ISIH Hackathon",
+    description:
+      "Secured first place among 900+ teams by developing an AI-based solution.",
+    color: "bg-blue-500",
+  },
+  {
+    image: bitathon,
+    icon: <FaAward />,
+    title: "Finalist – BITATHON",
+    description:
+      "Finalist at GIM × SAS Data Mining Championship.",
+    color: "bg-pink-500",
+  },
+];
 
 const Activities = () => {
   return (
-    <div className="w-full px-4 mt-10" id="activities">
-      <h1 className="pb-8 md:text-5xl sm:text-4xl text-3xl font-bold text-gray-800 text-center">
-        ✒ Achievements & Activities
-      </h1>
-      <div className="slider-container max-w-5xl mx-auto">
-        <Slider {...sliderSettings}>
-              {/* Activity 1: INTERNAL SMART INDIA HACKTHON WINNER */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
-            <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
-              <img
-                src={ISIH_WIN}
-                alt="LPF Scholarship"
-                className="object-contain max-w-[90%] max-h-[90%]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h2 className="text-lg md:text-xl font-bold mb-1">
-                  Internal Smart India Hackthon Winner
-                </h2>
-                <p className="text-xs md:text-sm font-light leading-tight">
-                  Winner of the Internal Smart India Hackathon (2025) for developing an innovative solution 
-        to real-world problem statements.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* Activity 2: LPF */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
-            <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
-              <img
-                src={lpf}
-                alt="LPF Scholarship"
-                className="object-contain max-w-[90%] max-h-[90%]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h2 className="text-lg md:text-xl font-bold mb-1">
-                  LPF Scholarship Awardee
-                </h2>
-                <p className="text-xs md:text-sm font-light leading-tight">
-                  Awarded the prestigious Lila Poonawalla Foundation Scholarship for Engineering Students (2021–22) for academic excellence and leadership.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Activity 3: BITATHON */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
-            <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
-              <img
-                src={bitathon}
-                alt="BITATHON Finalist"
-                className="object-contain max-w-[90%] max-h-[90%]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h2 className="text-lg md:text-xl font-bold mb-1">
-                  BITATHON Finalist
-                </h2>
-                <p className="text-xs md:text-sm font-light leading-tight">
-                  Finalist at BITATHON – Data Analytics & Mining Championship organized by GIM and SAS.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Activity 4: Inlight Internship */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-300 w-full">
-            <div className="relative w-full h-80 flex items-center justify-center overflow-hidden">
-              <img
-                src={inlight}
-                alt="Inlight Internship"
-                className="object-contain max-w-[90%] max-h-[90%]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h2 className="text-lg md:text-xl font-bold mb-1">
-                  Web Development Internship
-                </h2>
-                <p className="text-xs md:text-sm font-light leading-tight">
-                  Successfully completed full-stack web development internship at Inlight Technologies, Latur, applying practical web dev skills.
-                </p>
-              </div>
-            </div>
-          </div>
-        </Slider>
+    <section id="activities" className="py-20 px-6 max-w-7xl mx-auto">
+      <div className="text-center mb-14">
+        <h2 className="text-4xl font-bold">
+          Achievements & <span className="text-blue-400">Recognition</span>
+        </h2>
+        <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
       </div>
-    </div>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {achievements.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#111827] border border-gray-700 rounded-2xl overflow-hidden hover:border-blue-500 transition"
+          >
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-full h-48 object-cover"
+            />
+
+            <div className="p-6 text-center relative">
+              <div
+                className={`w-14 h-14 flex items-center justify-center rounded-full text-white text-2xl mx-auto -mt-12 ${item.color}`}
+              >
+                {item.icon}
+              </div>
+
+              <h3 className="text-xl font-semibold mt-4">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-400 text-sm mt-3">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

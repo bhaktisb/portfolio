@@ -1,95 +1,126 @@
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaDatabase,
-  FaJava,
-  FaGitAlt,
-} from "react-icons/fa";
-import {
-  SiPython,
-  SiR,
-  SiMysql,
-  SiTensorflow,
-  SiPhp,
-  SiFirebase,
-  SiLinux,
-  SiJavascript,
-} from "react-icons/si";
-import { TbBrandCpp } from "react-icons/tb";
-import { SiLeetcode } from "react-icons/si";
-import { GiArtificialIntelligence } from "react-icons/gi";
+import { FaCode, FaGlobe, FaTools, FaBug, FaBook } from "react-icons/fa";
 
 const TechStack = () => {
   return (
-    <div className="w-full px-4 mt-10" id="techstack">
-      <h1 className="pb-6 md:text-5xl sm:text-4xl text-3xl font-semibold ml-4">
-        👀 My Tech Stack
-      </h1>
-      <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-3 flex flex-col">
-        {/* Web Development */}
-        <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow-md h-60 rounded-md overflow-hidden border-t border-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[80%] grid grid-cols-4 gap-4 p-4 pl-8 text-white">
-            <FaHtml5 className="text-3xl shadow-sm" />
-            <FaCss3Alt className="text-3xl shadow-sm" />
-            <SiJavascript className="text-3xl shadow-sm" />
-            <FaReact className="text-3xl shadow-sm" />
-            <SiPhp className="text-3xl shadow-sm" />
-          </div>
-          <div className="bg-white text-black h-[20%] text-xl font-medium flex justify-center items-center">
-            Web Development
-          </div>
-        </div>
-
-        {/* AI/ML */}
-        <div className="bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500 shadow-md h-60 rounded-md overflow-hidden border-t border-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[80%] grid grid-cols-4 gap-4 p-4 pl-8 text-white">
-            <SiPython className="text-3xl shadow-sm" />
-            <SiTensorflow className="text-3xl shadow-sm" />
-            <GiArtificialIntelligence className="text-3xl shadow-sm" />
-            <SiR className="text-3xl shadow-sm" />
-          </div>
-          <div className="bg-white text-black h-[20%] text-xl font-medium flex justify-center items-center">
-            AI / ML
-          </div>
-        </div>
-
-        {/* Database Systems */}
-        <div className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 shadow-md h-60 rounded-md overflow-hidden border-t border-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[80%] flex justify-center items-center gap-10 text-white">
-            <FaDatabase className="text-3xl shadow-sm" />
-            <SiMysql className="text-3xl shadow-sm" />
-            <SiFirebase className="text-3xl shadow-sm" />
-          </div>
-          <div className="bg-white text-black h-[20%] text-xl font-medium flex justify-center items-center">
-            Database Systems
-          </div>
-        </div>
-
-        {/* Core CS & DSA */}
-        <div className="bg-gradient-to-r from-green-400 via-lime-500 to-yellow-400 shadow-md h-60 rounded-md overflow-hidden border-t border-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[80%] flex justify-center items-center gap-8 text-white">
-            <TbBrandCpp className="text-3xl shadow-sm" />
-            <FaJava className="text-3xl shadow-sm" />
-            <SiLeetcode className="text-3xl shadow-sm" />
-          </div>
-          <div className="bg-white text-black h-[20%] text-xl font-medium flex justify-center items-center">
-            Data Structures & Algorithms
-          </div>
-        </div>
-
-        {/* Tools */}
-        <div className="bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-500 shadow-md h-60 rounded-md overflow-hidden border-t border-gray-400 hover:scale-105 duration-300">
-          <div className="w-full h-[80%] flex justify-center items-center gap-8 text-white">
-            <SiLinux className="text-3xl shadow-sm" />
-            <FaGitAlt className="text-3xl shadow-sm" />
-          </div>
-          <div className="bg-white text-black h-[20%] text-xl font-medium flex justify-center items-center">
-            Tools & Platforms
-          </div>
-        </div>
+    <section id="techstack" className="py-20 px-6 max-w-7xl mx-auto">
+      {/* Header */}
+      <div className="text-center mb-14">
+        <h2 className="text-4xl font-bold">
+          Skills & <span className="text-blue-400">Expertise</span>
+        </h2>
+        <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
       </div>
-    </div>
+
+      {/* Cards */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {/* Languages */}
+        <div className="bg-[#111827] border border-gray-700 rounded-2xl p-6">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="bg-blue-500/20 text-blue-400 p-3 rounded-xl">
+              <FaCode size={22} />
+            </div>
+            <h3 className="text-xl font-semibold">Languages</h3>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {["C++", "Java", "Python", "MySQL"].map((skill) => (
+              <span key={skill} className="skill-pill">{skill}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* Web Development */}
+        <div className="bg-[#111827] border border-gray-700 rounded-2xl p-6">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="bg-pink-500/20 text-pink-400 p-3 rounded-xl">
+              <FaGlobe size={22} />
+            </div>
+            <h3 className="text-xl font-semibold">Web Development</h3>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "React",
+              "Flask",
+              "RESTful APIs",
+            ].map((skill) => (
+              <span key={skill} className="skill-pill">{skill}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* DevOps & Tools */}
+        <div className="bg-[#111827] border border-gray-700 rounded-2xl p-6">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="bg-orange-500/20 text-orange-400 p-3 rounded-xl">
+              <FaTools size={22} />
+            </div>
+            <h3 className="text-xl font-semibold">DevOps & Tools</h3>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {[
+              "Git",
+              "GitHub",
+              "GitHub Actions",
+              "Docker (Basic)",
+              "Linux",
+              "Firebase",
+              "Postman",
+              "Agile (Kanban Framework)",
+            ].map((skill) => (
+              <span key={skill} className="skill-pill">{skill}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* Testing & QA */}
+        <div className="bg-[#111827] border border-gray-700 rounded-2xl p-6">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="bg-red-500/20 text-red-400 p-3 rounded-xl">
+              <FaBug size={22} />
+            </div>
+            <h3 className="text-xl font-semibold">Testing & QA</h3>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {[
+              "Selenium",
+              "PyTest",
+              "JUnit",
+              "Unit Testing",
+              "Regression Testing",
+              "Automation Testing",
+              "API Testing",
+            ].map((skill) => (
+              <span key={skill} className="skill-pill">{skill}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* Core CS Concepts */}
+        <div className="bg-[#111827] border border-gray-700 rounded-2xl p-6 lg:col-span-2">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="bg-indigo-500/20 text-indigo-400 p-3 rounded-xl">
+              <FaBook size={22} />
+            </div>
+            <h3 className="text-xl font-semibold">Core CS Concepts</h3>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {[
+              "Data Structures & Algorithms",
+              "OOP",
+              "DBMS",
+              "Computer Networks",
+              "Operating Systems",
+            ].map((skill) => (
+              <span key={skill} className="skill-pill">{skill}</span>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
   );
 };
 

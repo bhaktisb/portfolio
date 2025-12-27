@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#0b1120] text-white font-sans;
+}
+
+.skill-pill {
+  @apply bg-gray-800 text-gray-300 px-4 py-1 rounded-full text-sm;
+}
+
